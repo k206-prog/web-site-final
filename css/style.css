@@ -1,0 +1,235 @@
+/* Скидання стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Головний банер */
+.hero {
+    background: linear-gradient(135deg, #406633 0%, #2c4a24 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-button {
+    background-color: #fff;
+    color: #406633;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Про нас */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-icon {
+    width: 120px;
+    height: 120px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #406633;
+}
+
+.about-text {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.about-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about-role {
+    color: #666;
+}
+
+/* Книги */
+.books {
+    background-color: #eef5e9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.books-subtitle {
+    color: #406633;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.books-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-8px);
+}
+
+.book-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #406633;
+    border-radius: 4px;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.book-author {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.book-price {
+    font-weight: bold;
+    color: #406633;
+    font-size: 1.1rem;
+}
+
+/* Підписка */
+.subscribe {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subscribe-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.subscribe-text {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #406633;
+}
+
+.submit-button {
+    background-color: #406633;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #335525;
+}
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
